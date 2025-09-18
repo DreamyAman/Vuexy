@@ -1,0 +1,85 @@
+@import 'variables';
+
+@mixin accent-btn{
+    color: #444150;
+    border-radius: 10px;
+    padding: 1em 2em;
+    &:hover{
+       background-color: #efeef0; 
+       color: #7368f0;
+    }
+    &:active{
+        background-color: #7368f0;
+        color: white;
+    }
+}
+
+.accent-btn{
+    @include accent-btn();
+    text-transform: capitalize;
+}
+
+@mixin primary-btn{
+    color: #444150;
+    padding: 1em 2em;
+    transition: 0.3ms ease-in-out;
+    &:hover{ 
+       color: #7368f0;
+    }
+}
+
+@mixin secondary-btn{
+    color: #444150;
+    border-radius: 10px;
+    padding: 1em 2em;
+    &:active{
+       background-color: #e8e7fd; 
+    }
+}
+
+.secondary-btn{
+    @include secondary-btn();
+    text-transform: capitalize;
+}
+
+@mixin input-box {
+    color: #abaab2;
+    border-radius: 10px;
+    padding: 0.9em 2em;
+    border: 1px solid #abaab2;
+    outline: none;
+    &:hover {
+        border: 1.5px solid #6e6b77;
+    }
+    &:focus {
+        transition:0.5s ease-in-out;
+        border: 2px solid #7368f0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.293)
+    }
+}
+
+.input-box {
+    @include input-box();
+    text-transform: capitalize;
+}
+
+@mixin row-center-flex{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.row-items-center{
+    @include row-center-flex();
+}
+
+@mixin col-center-flex{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.col-items-center{
+    @include col-center-flex();
+}
