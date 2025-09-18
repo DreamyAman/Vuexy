@@ -19,68 +19,80 @@ a {
   box-sizing: border-box;
 }
 
-.fs-1 {
-  font-size: 0.75;
+.font-size-1 {
+  font-size: 0.5em;
 }
 
-.fs-2 {
-  font-size: 1.5;
+.font-size-custom {
+  font-size: 0.9em;
 }
 
-.fs-3 {
-  font-size: 2.25;
+.font-size-2 {
+  font-size: 1em;
 }
 
-.fs-4 {
-  font-size: 3;
+.font-size-3 {
+  font-size: 1.5em;
 }
 
-.fs-5 {
-  font-size: 3.75;
+.font-size-4 {
+  font-size: 2em;
 }
 
-.fs-6 {
-  font-size: 4.5;
+.font-size-5 {
+  font-size: 2.5em;
 }
 
-.fs-7 {
-  font-size: 5.25;
+.font-size-6 {
+  font-size: 3em;
 }
 
-.fs-8 {
-  font-size: 6;
+.font-size-7 {
+  font-size: 3.5em;
 }
 
-.fw-100 {
-  font-weight: 1em;
+.font-size-8 {
+  font-size: 4em;
 }
 
-.fw-200 {
-  font-weight: 2em;
+.font-size-9 {
+  font-size: 4.5em;
 }
 
-.fw-300 {
-  font-weight: 3em;
+.font-size-10 {
+  font-size: 5em;
 }
 
-.fw-400 {
-  font-weight: 4em;
+.font-weight-100 {
+  font-weight: 100;
 }
 
-.fw-500 {
-  font-weight: 5em;
+.font-weight-200 {
+  font-weight: 200;
 }
 
-.fw-600 {
-  font-weight: 6em;
+.font-weight-300 {
+  font-weight: 300;
 }
 
-.fw-700 {
-  font-weight: 7em;
+.font-weight-400 {
+  font-weight: 400;
 }
 
-.fw-800 {
-  font-weight: 8em;
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
 }
 
 .color-primary {
@@ -147,68 +159,76 @@ a {
   font-size: 3;
 }
 
-.fs-1 {
-  font-size: 0.75;
+.font-size-1 {
+  font-size: 0.5em;
 }
 
-.fs-2 {
-  font-size: 1.5;
+.font-size-2 {
+  font-size: 1em;
 }
 
-.fs-3 {
-  font-size: 2.25;
+.font-size-3 {
+  font-size: 1.5em;
 }
 
-.fs-4 {
-  font-size: 3;
+.font-size-4 {
+  font-size: 2em;
 }
 
-.fs-5 {
-  font-size: 3.75;
+.font-size-5 {
+  font-size: 2.5em;
 }
 
-.fs-6 {
-  font-size: 4.5;
+.font-size-6 {
+  font-size: 3em;
 }
 
-.fs-7 {
-  font-size: 5.25;
+.font-size-7 {
+  font-size: 3.5em;
 }
 
-.fs-8 {
-  font-size: 6;
+.font-size-8 {
+  font-size: 4em;
 }
 
-.fw-100 {
-  font-weight: 1em;
+.font-size-9 {
+  font-size: 4.5em;
 }
 
-.fw-200 {
-  font-weight: 2em;
+.font-size-10 {
+  font-size: 5em;
 }
 
-.fw-300 {
-  font-weight: 3em;
+.font-weight-100 {
+  font-weight: 100;
 }
 
-.fw-400 {
-  font-weight: 4em;
+.font-weight-200 {
+  font-weight: 200;
 }
 
-.fw-500 {
-  font-weight: 5em;
+.font-weight-300 {
+  font-weight: 300;
 }
 
-.fw-600 {
-  font-weight: 6em;
+.font-weight-400 {
+  font-weight: 400;
 }
 
-.fw-700 {
-  font-weight: 7em;
+.font-weight-500 {
+  font-weight: 500;
 }
 
-.fw-800 {
-  font-weight: 8em;
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
 }
 
 .color-primary {
@@ -263,7 +283,7 @@ a {
   font-size: 1.5;
 }
 
-.heading-h4 { 
+.heading-h4 {
   font-size: 2;
 }
 
@@ -278,7 +298,7 @@ a {
 .accent-btn {
   color: #444150;
   border-radius: 10px;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   text-transform: capitalize;
 }
 .accent-btn:hover {
@@ -292,12 +312,16 @@ a {
 
 .secondary-btn {
   color: #444150;
-  border-radius: 10px;
-  padding: 1em 2em;
+  border-radius: 5px;
+  padding: 0.5em 1em;
   text-transform: capitalize;
 }
+.secondary-btn:hover {
+  background-color: #efeef0;
+}
 .secondary-btn:active {
-  background-color: #e8e7fd;
+  background-color: #7368f0;
+  color: white;
 }
 
 .input-box {
@@ -328,4 +352,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 15rem;
+  border: 2px solid black;
 }/*# sourceMappingURL=index.css.map */

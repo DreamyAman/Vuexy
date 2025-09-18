@@ -1,16 +1,16 @@
 $base-fs:1em;
 
-@for $i from 1 through 8{
-    .fs-#{$i}{
-        font-size: $i*0.75;
+@for $i from 1 through 10{
+    .font-size-#{$i}{
+        font-size: $i*0.5em;
     }
 }
 
 $base-fw:1em;
 
 @for $i from 1 through 8{
-    .fw-#{$i*100}{
-        font-weight: $i*1em;
+    .font-weight-#{$i*100}{
+        font-weight: $i*100;
     }
 }
 

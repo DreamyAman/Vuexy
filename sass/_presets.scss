@@ -3,7 +3,7 @@
 @mixin accent-btn{
     color: #444150;
     border-radius: 10px;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     &:hover{
        background-color: #efeef0; 
        color: #7368f0;
@@ -30,11 +30,16 @@
 
 @mixin secondary-btn{
     color: #444150;
-    border-radius: 10px;
-    padding: 1em 2em;
-    &:active{
-       background-color: #e8e7fd; 
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    &:hover{
+       background-color: #efeef0; 
     }
+    &:active{
+        background-color: #7368f0;
+        color: white;
+    }
+
 }
 
 .secondary-btn{
