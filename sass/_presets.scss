@@ -47,10 +47,30 @@
     text-transform: capitalize;
 }
 
+@mixin nav-icon{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   padding: 15%;
+   margin: 0.5em;
+   &:hover{
+       background-color: #efeef0; 
+   }
+   &:active{
+        background-color: #7368f0;
+        color: white;
+   }
+
+}
+
+.nav-icon{
+   @include nav-icon();
+}
+
 @mixin input-box {
     color: #abaab2;
     border-radius: 10px;
-    padding: 0.9em 2em;
+    padding: 0.5rem 1rem;
     border: 1px solid #abaab2;
     outline: none;
     &:hover {

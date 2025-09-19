@@ -7,6 +7,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #444150;
 }
 
 a {
@@ -21,10 +22,6 @@ a {
 
 .font-size-1 {
   font-size: 0.5em;
-}
-
-.font-size-custom {
-  font-size: 0.9em;
 }
 
 .font-size-2 {
@@ -324,10 +321,25 @@ a {
   color: white;
 }
 
+.nav-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 15%;
+  margin: 0.5em;
+}
+.nav-icon:hover {
+  background-color: #efeef0;
+}
+.nav-icon:active {
+  background-color: #7368f0;
+  color: white;
+}
+
 .input-box {
   color: #abaab2;
   border-radius: 10px;
-  padding: 0.9em 2em;
+  padding: 0.5rem 1rem;
   border: 1px solid #abaab2;
   outline: none;
   text-transform: capitalize;
@@ -354,8 +366,28 @@ a {
   align-items: center;
 }
 
+/* Using position: fixed for a static sidebar and navbar */
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
   height: 100vh;
-  width: 15rem;
-  border: 2px solid black;
+  border: 1px solid #abaab2;
+}
+
+article {
+  width: 80vw;
+  height: 100vh;
+  margin-left: 20vw;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 80px;
+  background-color: white;
+  padding: 1.5% 4%;
 }/*# sourceMappingURL=index.css.map */
