@@ -27,6 +27,14 @@
     color: white;
 }
 
+.accent-btn.active {
+    background-color: #7368f0;
+    color: white;
+}
+.accent-btn.active i {
+    color: white;
+}
+
 
 @mixin primary-btn{
     color: #444150;
@@ -37,11 +45,15 @@
     }
 }
 
+
 @mixin secondary-btn{
     color: #444150;
-    border-radius: 5px;
+    border-radius: 7px;
+    padding: 0.5em 2em;
+    background-color: transparent;
     &:hover{
        background-color: #efeef0; 
+       color: #444150;
     }
     &:active{
         background-color: #7368f0;
@@ -49,14 +61,59 @@
     }
 }
 
-.secondary-btn:active i{
-    color: white;
-}
-
 .secondary-btn{
     @include secondary-btn();
     text-transform: capitalize;
 }
+
+secondary-btn:hover i{
+    color: #7368f0;
+}
+.secondary-btn:active i{
+    color: white;
+}
+
+.secondary-btn.active {
+    background-color: #7368f0;
+    color: white;
+}
+.secondary-btn.active i {
+    color: white;
+}
+
+@mixin vx-dismiss-btn{
+    color: #90939f;
+    background-color: #ebebed;
+    border-radius: 7px;
+    transition: 0.3ms ease-in-out;
+    &:hover{ 
+    background-color: #e1e1e4;
+}
+}
+
+.vx-dismiss-btn{
+    @include vx-dismiss-btn();
+    text-transform: capitalize;
+}
+
+@mixin vx-success-btn{
+    color: white;
+    border-radius: 7px;
+    background-color: #7368f0;
+    &:hover{
+       background-color: #685dd8; 
+    }
+    &:active{
+        background-color: #685dd8;
+    }
+}
+
+.vx-success-btn{
+    @include vx-success-btn();
+    text-transform: capitalize;
+}
+
+
 
 @mixin nav-icon{
    height: 30px;
@@ -79,7 +136,7 @@
 }
 
 @mixin input-box {
-    color: #abaab2;
+    color: #444150;
     border-radius: 7px;
     padding: 0.5rem 1rem;
     border: 1px solid #abaab2;

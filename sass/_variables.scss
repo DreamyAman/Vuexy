@@ -1,16 +1,16 @@
-$base-fs:1em;
+$base-fs:0.4em;
 
 @for $i from 1 through 10{
     .vx-fs-#{$i}{
-        font-size: $i*0.5em;
+        font-size: $base-fs*$i;
     }
 }
 
-$base-fw:1em;
+$base-fw:100;
 
 @for $i from 1 through 8{
     .vx-fw-#{$i*100}{
-        font-weight: $i*100;
+        font-weight: $base-fw*$i;
     }
 }
 
