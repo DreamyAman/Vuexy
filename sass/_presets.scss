@@ -2,10 +2,11 @@
 
 @mixin accent-btn{
     color: #444150;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 0.5em 2em;
+    background-color: transparent;
     &:hover{
-       background-color: #efeef0; 
+       background-color: #e9e7fd; 
        color: #7368f0;
     }
     &:active{
@@ -19,6 +20,14 @@
     text-transform: capitalize;
 }
 
+.accent-btn:hover i{
+    color: #7368f0;
+}
+.accent-btn:active i{
+    color: white;
+}
+
+
 @mixin primary-btn{
     color: #444150;
     padding: 1em 2em;
@@ -31,7 +40,6 @@
 @mixin secondary-btn{
     color: #444150;
     border-radius: 5px;
-    padding: 0.5em 1em;
     &:hover{
        background-color: #efeef0; 
     }
@@ -39,7 +47,10 @@
         background-color: #7368f0;
         color: white;
     }
+}
 
+.secondary-btn:active i{
+    color: white;
 }
 
 .secondary-btn{
@@ -69,17 +80,19 @@
 
 @mixin input-box {
     color: #abaab2;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 0.5rem 1rem;
     border: 1px solid #abaab2;
-    outline: none;
+    outline: 2.4px solid transparent;
+    outline-offset: -2px;
+    transition:0.3s ease-in-out;
     &:hover {
         border: 1.5px solid #6e6b77;
     }
     &:focus {
-        transition:0.5s ease-in-out;
-        border: 2px solid #7368f0;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.293)
+        outline: 2.4px solid #7368f0;
+        outline-offset: -2px;
+        box-shadow: 0px 0px 10px #7368f08d;
     }
 }
 

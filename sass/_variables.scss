@@ -1,7 +1,7 @@
 $base-fs:1em;
 
 @for $i from 1 through 10{
-    .font-size-#{$i}{
+    .vx-fs-#{$i}{
         font-size: $i*0.5em;
     }
 }
@@ -9,7 +9,7 @@ $base-fs:1em;
 $base-fw:1em;
 
 @for $i from 1 through 8{
-    .font-weight-#{$i*100}{
+    .vx-fw-#{$i*100}{
         font-weight: $i*100;
     }
 }
@@ -45,7 +45,7 @@ $bg-colors:(
 $base-heading-fs:1em;
 
 @for $i from 1 through 6{
-    .heading-h#{$i}{
-        font-size: $i*0.5;
+    .vx-heading-h#{$i}{
+        font-size: $i*0.5em;
     }
 }

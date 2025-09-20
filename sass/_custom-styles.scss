@@ -1,27 +1,62 @@
-/* Using position: fixed for a static sidebar and navbar */
-.sidebar {
+aside {
+   position: sticky;
+   top: 0;
+   width: 280px;
+   height: 100vh;
+   background-color: white;
+   border-right: 1px solid #e5e7eb;
+   overflow-y: auto;
+   overflow-x: hidden;
+   z-index: 1;
+}
+
+@media (max-width:1200px){
+   aside{
+   position: fixed;
+   transform: translateX(-265px);
+   transition: transform 0.4s;
+   box-shadow: 2px 0 20px rgba(0, 0, 0, 0.262);
+   }
+
+   .sidebar-container:hover aside {
    position: fixed;
    top: 0;
    left: 0;
-   width: 250px;
-   height: 100vh;
-   border: 1px solid #abaab2;
+   transform: translateX(0);
 }
+}
+
+.vx-fs-cus{
+   font-size: 0.8em;
+}
+.vx-fs-cus-1{
+   font-size: 1.3em;
+}
+
 
 article {
-    width: 80vw;
-    height: 100vh;
-    margin-left: 20vw;
+   width: 100%;
+   padding:2% 5%;
 }
 
-.nav-container{
-   position: fixed;
-   top: 0;
-   left: 250px;
-   width: calc(100% - 250px);
-   height: 80px;
-   background-color: white;
-   padding: 1.5% 4%;
+section{
+   width: 100%;
+   border: 1px solid #abaab2;
+   border-radius: 7px;
 }
 
+.navbar{
+   height: 8vh;
+   position: relative;
+}
 
+@media (max-width:1000px){
+   .navbar{
+   height: 27vh;
+}
+
+   .navbar *{
+   margin-bottom: 2%;
+}
+
+}
