@@ -66,6 +66,7 @@
     text-transform: capitalize;
 }
 
+
 secondary-btn:hover i{
     color: #7368f0;
 }
@@ -113,8 +114,6 @@ secondary-btn:hover i{
     text-transform: capitalize;
 }
 
-
-
 @mixin nav-icon{
    height: 30px;
    width: 30px;
@@ -153,6 +152,20 @@ secondary-btn:hover i{
     }
 }
 
+@mixin cancel-btn{
+   color: red;
+   background-color: #ffe3e4;
+   padding: 0.5em 2em;
+   border-radius: 7px;
+   &:hover{
+    background-color: #ffd4d5;
+   }
+}
+
+.cancel-btn{
+   @include cancel-btn();
+}
+
 .input-box {
     @include input-box();
     text-transform: capitalize;
@@ -178,3 +191,5 @@ secondary-btn:hover i{
 .col-items-center{
     @include col-center-flex();
 }
+
+

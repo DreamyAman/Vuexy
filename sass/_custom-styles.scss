@@ -84,4 +84,28 @@ section{
     padding: 0.5em 2em;
 }
 
-/* Complete fix for profile image stretching */
+.progress{
+   height: 8px;
+   border-radius: 10px;
+}
+.progress-bar{
+   background-color: #7368f0;
+   width: 25%;
+   border-radius: 10px;
+}
+
+.alert-icon{
+   color: white;
+   background-color: #ff9f43;
+}
+
+.vx-pill{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1em 1.5em;
+   height: 15px;
+   color:#7367f0;
+   background-color: #e9e7fd;
+   border-radius: 50vmax;
+}

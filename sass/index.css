@@ -29,43 +29,43 @@ a {
 }
 
 .vx-fs-1 {
-  font-size: 0.4em;
+  font-size: 0.25em;
 }
 
 .vx-fs-2 {
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 .vx-fs-3 {
-  font-size: 1.2em;
+  font-size: 0.75em;
 }
 
 .vx-fs-4 {
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .vx-fs-5 {
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 .vx-fs-6 {
-  font-size: 2.4em;
+  font-size: 1.5em;
 }
 
 .vx-fs-7 {
-  font-size: 2.8em;
+  font-size: 1.75em;
 }
 
 .vx-fs-8 {
-  font-size: 3.2em;
+  font-size: 2em;
 }
 
 .vx-fs-9 {
-  font-size: 3.6em;
+  font-size: 2.25em;
 }
 
 .vx-fs-10 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 .vx-fw-100 {
@@ -165,43 +165,43 @@ a {
 }
 
 .vx-fs-1 {
-  font-size: 0.4em;
+  font-size: 0.25em;
 }
 
 .vx-fs-2 {
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 .vx-fs-3 {
-  font-size: 1.2em;
+  font-size: 0.75em;
 }
 
 .vx-fs-4 {
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .vx-fs-5 {
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 .vx-fs-6 {
-  font-size: 2.4em;
+  font-size: 1.5em;
 }
 
 .vx-fs-7 {
-  font-size: 2.8em;
+  font-size: 1.75em;
 }
 
 .vx-fs-8 {
-  font-size: 3.2em;
+  font-size: 2em;
 }
 
 .vx-fs-9 {
-  font-size: 3.6em;
+  font-size: 2.25em;
 }
 
 .vx-fs-10 {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 .vx-fw-100 {
@@ -405,6 +405,16 @@ secondary-btn:hover i {
   color: white;
 }
 
+.cancel-btn {
+  color: red;
+  background-color: #ffe3e4;
+  padding: 0.5em 2em;
+  border-radius: 7px;
+}
+.cancel-btn:hover {
+  background-color: #ffd4d5;
+}
+
 .input-box {
   color: #444150;
   border-radius: 7px;
@@ -520,4 +530,29 @@ section {
   padding: 0.5em 2em;
 }
 
-/* Complete fix for profile image stretching *//*# sourceMappingURL=index.css.map */
+.progress {
+  height: 8px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background-color: #7368f0;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.alert-icon {
+  color: white;
+  background-color: #ff9f43;
+}
+
+.vx-pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1.5em;
+  height: 15px;
+  color: #7367f0;
+  background-color: #e9e7fd;
+  border-radius: 50vmax;
+}/*# sourceMappingURL=index.css.map */
