@@ -80,7 +80,7 @@
     </nav>
 
     <nav class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
-        <a href="accounts.html" class="accent-btn border-0 vx-fw-500 my-1 my-lg-3 vx-fs-4 d-flex flex-row align-items-center justify-content-center me-2 active">
+        <a href="accounts.html" class="accent-btn border-0 vx-fw-500 my-1 my-lg-3 vx-fs-4 d-flex flex-row align-items-center justify-content-center me-2">
             <i class="ti ti-users me-2"></i>
             Accounts
         </a>
@@ -88,7 +88,7 @@
             <i class="ti ti-lock me-2"></i>
             Security
         </a>
-        <a href="bill&payment.html" class="accent-btn border-0 vx-fw-500 my-1 my-lg-3 vx-fs-4 d-flex flex-row align-items-center justify-content-center me-2">
+        <a href="bill&payment.html" class="accent-btn border-0 vx-fw-500 my-1 my-lg-3 vx-fs-4 d-flex flex-row align-items-center justify-content-center me-2 active">
             <i class="ti ti-bookmark me-2"></i>
             Billing & Plans
         </a>
@@ -103,10 +103,11 @@
     </nav>
     
         
-    <section class="container-fluid row d-flex flex-column flex-lg-row align-items-center">
+    <section class="px-4 py-3">
 
         
-        <div class="col-lg-6">
+    <div class="row d-flex flex-column flex-lg-row align-items-center">
+        <div class="col-12 col-lg-6">
 
             <div>
             <h3 class="vx-fs-5 mt-4">Current Plan</h3>
@@ -126,15 +127,15 @@
             <span class="vx-fs-4 color-neutral-400 vx-fw-400">Standard plan for small to medium businesses</span>
 
             <div class="d-flex mt-4 mb-4">
-                <button class="vx-success-btn py-2 px-3 border-0">Upgrade Plan</button>
-                <button class="cancel-btn py-2 px-3 border-0 ms-3">Cancel Subscription</button>
+                <button class="vx-success-btn py-2 px-3 border-0 vx-fw-500">Upgrade Plan</button>
+                <button class="cancel-btn py-2 px-3 border-0 ms-3 vx-fw-500">Cancel Subscription</button>
             </div>
             </div>
 
         </div>
 
 
-        <div class="col-lg-6">
+        <div class="col-12 col-lg-6">
 
             <div class="custom-clr-yellow px-3 py-3 rounded-3 d-flex flex-row">
             <div><i class="ti ti-alert-triangle alert-icon p-1 rounded-2 vx-fs-6"></i></div>
@@ -149,27 +150,219 @@
             <label class="form-label">12 of 30 days</label>
         </div>
             
-        <div class="progress mb-1">
+        <div class="progress mb-1 ">
             <div class="progress-bar" role="progressbar"></div>
         </div>
-        <span class="color-neutral-400">18 days remaining until your plan requires update</span>
+        <span class="color-neutral-400 pb-4">18 days remaining until your plan requires update</span>
 
         </div>
+    </div>
 
     
     </section>
 
+    <section class="px-4 gap-4 d-flex flex-column flex-lg-row mt-4 py-3">
+        
+    <div class="col-lg-6">
 
-    <section></section>
-    <section></section>
+    <h3 class="vx-fs-5 mt-4">Payment Methods</h3>
+
+    <div class="mt-5">
+        <input type="radio" id="atm" name="payment-way">
+        <label class="vx-fs-4 vx-fw-400 me-5" for="atm">Credit/Debit/ATM Card</label>
+
+        <input type="radio" id="paypal" name="payment-way">
+        <label class="vx-fs-4 vx-fw-400" for="paypal">Paypal account</label>
+    </div>
+
+        <label class="fs-6 vx-fw-400 me-5 mt-5" for="atm">Card Number</label>
+        <input class="w-100 input-box vx-fs-4 vx-fw-400" type="text" id="card-num" name="card-num" placeholder="1356 5678 9210 5399">
+
+        
+        <div class="row mt-4">
+            <div class="col-6">
+                <label class="fs-6 vx-fw-400" for="name">Name</label>
+                <input class="w-100 input-box vx-fs-4 vx-fw-400" type="text" id="name" name="card-name" placeholder="Joe Doe">
+            </div>
+            <div class="col-6 d-flex">
+                
+                <div class="col-6 me-4">
+                    <label class="fs-6 vx-fw-400" for="atm">exp-date</label>
+                    <input class="w-100 input-box vx-fs-4 vx-fw-400" type="text" id="exp-date" name="exp-date" placeholder="MM/YY">
+                </div>
+
+                <div class="col-6 pe-2 pe-lg-4">
+                    <label class="fs-6 vx-fw-400" for="cvv-code">CVV Code</label>
+                    <input class="w-100 input-box vx-fs-4 vx-fw-400" type="text" id="cvv-code" name="cvv-code" placeholder="654">
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-check form-switch d-flex align-items-center ms-5 mt-4">
+            <input class="form-check-input border-black vx-fs-8" type="checkbox" role="switch" id="saveCardForm">
+            <label class="form-check-label vx-fs-4 pt-2 vx-fw-400" for="saveCardForm">Save card for future billing?</label>
+        </div>
+        
+        <div class="d-flex mt-4 mb-4">
+            <button class="vx-success-btn py-2 px-3 border-0 vx-fw-500">Save Changes</button>
+            <button class="vx-dismiss-btn py-2 px-3 border-0 ms-3 vx-fw-500">Cancel</button>
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+            
+            <h3 class="vx-fs-4 mt-4">My Cards</h3>
+            
+            <div class="d-flex flex-row justify-content-between card rounded-3 overflow-hidden border-0 bg-paycards px-4 py-3">
+
+            <div class="col-6">
+                <img width="60em" src="assets/images/mastercard-logo.png" alt="master-card">
+                
+                <div class="d-flex align-items-center mt-3">
+                    <h3 class="vx-fs-4">Tom McBride</h3>
+                    <a href="#" class="vx-pill vx-fs-3 px-2 mb-1 ms-2 rounded-1 ms-3">Primary</a>
+                </div>
+
+                <span class="mt-1">∗∗∗∗ ∗∗∗∗ 9856</span>
+            </div>
+
+            <div class="col-6 text-end">
+            <div class="d-flex justify-content-end mt-4 mb-2">
+                <button class="vx-pill vx-fs-4 px-3 py-3 border-0 vx-fw-400 ms-2 rounded-1">Edit</button>
+                <button class="cancel-btn vx-fs-4 px-2 py-1 border-0 vx-fw-400 ms-2 rounded-1">Delete</button>
+            </div>
+            <span class="vx-fs-3 vx-fw-500 color-neutral-400">Card expires at 12/26</span>
+
+            </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-between card rounded-3 overflow-hidden border-0 bg-paycards px-4 py-3 mt-4">
+
+            <div class="col-6">
+                <img width="80em" src="assets/images/visa-card-logo.png" alt="master-card">
+                
+                <div class="d-flex align-items-center mt-3">
+                    <h3 class="vx-fs-4">Mildred Wagner</h3>
+                </div>
+
+                <span class="mt-1">∗∗∗∗ ∗∗∗∗ 5896</span>
+            </div>
+
+            <div class="col-6 text-end">
+            <div class="d-flex justify-content-end mt-4 mb-2">
+                <button class="vx-pill vx-fs-4 px-3 py-3 border-0 vx-fw-400 ms-2 rounded-1">Edit</button>
+                <button class="cancel-btn vx-fs-4 px-2 py-1 border-0 vx-fw-400 ms-2 rounded-1">Delete</button>
+            </div>
+            <span class="vx-fs-3 vx-fw-500 color-neutral-400">Card expires at 10/27</span>
+
+            </div>
+            </div>
+
+            
+        </div>
+
+    </section>
+    
+    <section class="mt-4">
+        <h3 class="vx-fs-5 mt-4 px-4 py-3">Billing Address</h3>
+
+        <form class="container-fluid">  
+
+                <div class="row d-flex flex-column flex-lg-row mt-5">
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="company-name">Company Name</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" id="company-name" placeholder="Pixinvent" name="company-name">
+                    </div>
+
+
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="billing-bmail">Billing Email</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="email" placeholder="john.doe@example.com" id="billing-bmail" name="billing-bmail">
+                    </div>
+                </div>
+
+                
+
+                <div class="row d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="tax-id">Tax ID</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="email" placeholder="Enter Tax ID" id="tax-id" name="text-id">
+                    </div>
+
+
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="vat-num">VAT Number</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="Enter VAT Number" id="vat-num" name="vat-num">
+                    </div>
+                </div>
+
+
+
+                <div class="row d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="phoneNo">Mobile</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4 p-2" type="text" placeholder="US(+1) 202 555 011" id="phoneNo" name="phoneNo">
+                    </div>
+
+
+                    <div class="col-12 col-lg-6 vx-fs-cus py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fs-5 vx-fw-400" for="country">Country</label>
+                        <select name="country" class="input-box w-100 vx-fs-5" id="country">
+                            <option value="select" name="select">USA</option>
+                            <option value="Brazil" name="Brazil">Brazil</option>
+                            <option value="Japan" name="Japan">Japan</option>
+                            <option value="Germany" name="Germany">Germany</option>
+                            <option value="Canada" name="Canada">Canada</option>
+                            <option value="Egypt" name="Egypt">Egypt</option>
+                            <option value="Australia" name="Australia">Australia</option>
+                            <option value="Argentina" name="Argentina">Argentina</option>
+                            <option value="Norway" name="Norway">Norway</option>
+                            <option value="Kenya" name="Kenya">Kenya</option>
+                            <option value="Thailand" name="Thailand">Thailand</option>
+                        </select>
+                    </div>
+
+
+
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100 vx-fs-4 py-2 px-2 mt-3">
+                        <label class="m-1 vx-fw-400" for="billing-address">Billing Address</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="Billing Address" id="billing-address" name="billing-address">
+                    </div>
+                </div>
+
+
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 mt-3 px-2">
+                        <label class="mb-1 vx-fw-400" for="state">State</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="California" id="state" name="state">
+                    </div>
+
+
+                    <div class="col-12 col-lg-6 vx-fs-4 py-2 ms-0 ms-lg-3 pe-2 pe-lg-4 mt-3 px-2">
+                        <label class="mb-1 vx-fw-400" for="zip-code">Zip Code</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="231456" id="zip-code" name="zip-code">
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="d-flex w-100 col-9 my-3 px-4">
+                        <button class="vx-success-btn pt-2 pb-1 px-4 me-2 border-0"><h3 class="vx-fs-4">Save Changes</h3></button>
+                        <button class="vx-dismiss-btn pt-1 px-4 ms-2 border-0"><h3 class="vx-fs-4">Discard</h3></button>
+                    </div>
+                </div>
+
+            </form>
+    </section>
 
     <footer class="d-flex justify-content-between mt-5">
-        <div class="d-flex vx-fs-4 vx-fw-400 color-neutral-400">
+        <div class="d-flex vx-fs-4 vx-fw-400 color-neutral-400 mx-auto mx-lg-0">
             © 2025 , made with ❤️ by 
         <a href="#" class="color-primary ms-1">Pixinvent</a>
         </div>
 
-        <div class="d-flex vx-fs-4 vx-fw-400">
+        <div class="d-flex vx-fs-4 vx-fw-400 d-none d-lg-block">
             <a href="#" class="ms-4 color-primary">License</a>
             <a href="#" class="ms-4 color-primary"> More Themes</a>
             <a href="#" class="ms-4 color-primary"> Documentation</a>
