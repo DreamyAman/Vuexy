@@ -1,3 +1,5 @@
+//font size
+
 $base-fs:0.25em;
 
 @for $i from 1 through 10{
@@ -6,6 +8,8 @@ $base-fs:0.25em;
     }
 }
 
+//font weight
+
 $base-fw:100;
 
 @for $i from 1 through 8{
@@ -13,6 +17,8 @@ $base-fw:100;
         font-weight: $base-fw*$i;
     }
 }
+
+//utility colors
 
 $colors:(
     "primary":#7368f0,
@@ -29,6 +35,8 @@ $colors:(
     }
 }
 
+//utility background colours
+
 $bg-colors:(
     "accent":#7368f0,
     "primary":#efeef0,
@@ -41,6 +49,8 @@ $bg-colors:(
         color: $color;
     }
 }
+
+//Heading font sizes
 
 $base-heading-fs:1em;
 

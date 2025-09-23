@@ -1,5 +1,7 @@
 @import 'variables';
 
+// Button styling
+
 @mixin accent-btn{
     color: #444150;
     border-radius: 7px;
@@ -114,6 +116,22 @@ secondary-btn:hover i{
     text-transform: capitalize;
 }
 
+@mixin cancel-btn{
+   color: red;
+   background-color: #ffe3e4;
+   padding: 0.5em 2em;
+   border-radius: 7px;
+   &:hover{
+    background-color: #ffd4d5;
+   }
+}
+
+.cancel-btn{
+   @include cancel-btn();
+}
+
+//navigation styling
+
 @mixin nav-icon{
    height: 30px;
    width: 30px;
@@ -127,7 +145,7 @@ secondary-btn:hover i{
         background-color: #7368f0;
         color: white;
    }
-
+   
 }
 
 .nav-icon{
@@ -152,23 +170,30 @@ secondary-btn:hover i{
     }
 }
 
-@mixin cancel-btn{
-   color: red;
-   background-color: #ffe3e4;
-   padding: 0.5em 2em;
-   border-radius: 7px;
-   &:hover{
-    background-color: #ffd4d5;
-   }
-}
-
-.cancel-btn{
-   @include cancel-btn();
-}
-
 .input-box {
     @include input-box();
     text-transform: capitalize;
+}
+
+//article styling
+
+@mixin custom-table{
+font-size: 14px;
+thead th{
+    color: #444150;
+    font-weight: 600;
+    padding: 0em 1em 1em 1em;
+    border-bottom: 1px solid #dee2e6;
+}
+tbody td {
+    color: #6c757d;
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #f1f3f4;
+}
+}
+
+.custom-table{
+    @include custom-table();
 }
 
 @mixin row-center-flex{
@@ -176,6 +201,8 @@ secondary-btn:hover i{
    justify-content: center;
    align-items: center;
 }
+
+//positioning
 
 .row-items-center{
     @include row-center-flex();

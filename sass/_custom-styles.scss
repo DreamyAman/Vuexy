@@ -7,7 +7,7 @@ aside {
    border-right: 1px solid #e5e7eb;
    overflow-y: auto;
    overflow-x: hidden;
-   z-index: 1;
+   z-index: 2;
 }
 
 @media (max-width:1200px){
@@ -50,6 +50,7 @@ section{
    position: sticky;
    top:10px;
    background-color: white;
+   z-index: 1;
 }
 
 
@@ -112,4 +113,16 @@ section{
 
 .bg-paycards{
    background-color: #f3f2f3;
+}
+
+.page-shift{
+   background-color: #efeef0;
+}
+.page-shift-back{
+   color: #aaa9b1;
+}
+
+.modal-backdrop {
+  backdrop-filter:blur(20000px);
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }

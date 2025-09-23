@@ -14,6 +14,8 @@
     
     <main class="d-flex flex-grow-1">
 
+<!-- Sidebar section -->        
+
     <div class="sidebar-container">
         <aside>
         <nav>
@@ -37,18 +39,30 @@
                     <h3 class="vx-fs-4 vx-fw-400">APPS & PAGES</h3>
                 </li>
                 <li>
-                    <a href="#" class="d-flex align-items-center w-100 secondary-btn p-1 active">
+                    <a href="#" class="d-flex align-items-center w-100 secondary-btn my-3 p-1 active">
                         <i class="ti ti-file vx-fs-6 mx-2"></i>
                         <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Account Settings</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="advance-search.html" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-layout-grid vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Advanced</h3>
                         <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
                     </a>
                 </li>
             </ul>
         </nav>
     </aside>
-    </div>
+</div>
+
+<!-- Sidebar section closes-->  
+ 
 
     <article>
+
+<!-- Navigation -->
 
     <nav class="d-flex align-items-center input-box navbar navbar-expand-md g-0">
 
@@ -56,7 +70,8 @@
             <span class="ti ti-menu-2 mb-1"></span>
         </button>
 
-        <button type="submit" class="border-0 bg-transparent mt-1"><i class="ti ti-search vx-fs-6 ms-3 me-2"></i></button>
+        <button type="submit" class="border-0 bg-transparent mt-1 d-block d-md-none" data-bs-toggle="modal" data-bs-target="#search-area"><i class="ti ti-search vx-fs-6 ms-3 me-2"></i></button>
+        <button type="submit" class="border-0 bg-transparent mt-1 d-none d-md-block "><i class="ti ti-search vx-fs-6 ms-3 me-2"></i></button>
         <div class="collapse navbar-collapse" id="nav">
             <input class="input-box border-0 me-auto " type="text" placeholder="Search [CTRL + K]">
         </div>
@@ -78,6 +93,50 @@
         </ul>     
        
     </nav>
+
+    <div class="modal fade" id="search-area">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <i class="ti ti-search vx-fs-6 ms-3 me-2"></i>
+                       <input type="search" class="border-0 input-box" placeholder="Search [CTRL + K]">
+                       <button class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled p-2 ms-1">
+                <li>
+                    <a href="#" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-smart-home vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Dashboards</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li class="color-neutral-200 vx-fw-500 my-3 ms-3">
+                    <h3 class="vx-fs-4 vx-fw-400">APPS & PAGES</h3>
+                </li>
+                <li class="my-3">
+                    <a href="accounts.html" class="d-flex align-items-center w-100 secondary-btn p-1 active">
+                        <i class="ti ti-file vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Account Settings</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="advance-search.html" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-layout-grid vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Advanced</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>   
+            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Navigation closes--> 
+
+<!-- Accounts section navigation -->
 
     <nav class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
         <a href="accounts.html" class="accent-btn border-0 vx-fw-500 my-1 my-lg-3 vx-fs-4 d-flex flex-row align-items-center justify-content-center me-2">
@@ -101,7 +160,10 @@
             Connections
         </a>
     </nav>
-    
+
+<!-- Accounts section navigation closes --> 
+ 
+<!-- User Current plan info -->
         
     <section class="px-4 py-3">
 
@@ -158,7 +220,10 @@
         </div>
     </div>
 
-    
+<!-- User Current plan info ends-->    
+
+<!-- Payments method section -->
+
     </section>
 
     <section class="px-4 gap-4 d-flex flex-column flex-lg-row mt-4 py-3">
@@ -258,8 +323,11 @@
             </div>
             </div>
 
-            
+<!-- Payments method section closes-->
+
         </div>
+
+<!-- Billing Address form-->
 
     </section>
     
@@ -354,7 +422,12 @@
                 </div>
 
             </form>
+ 
+<!-- Billing Address form ends-->  
+
     </section>
+
+<!-- Footer -->
 
     <footer class="d-flex justify-content-between mt-5">
         <div class="d-flex vx-fs-4 vx-fw-400 color-neutral-400 mx-auto mx-lg-0">
@@ -369,6 +442,9 @@
             <a href="#" class="ms-4 color-primary">Support</a>
         </div>
     </footer>
+
+<!-- Footer ends -->
+
     </article>
     
     

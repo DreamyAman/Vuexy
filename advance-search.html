@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/index.css">
+    <title>Vuexy</title>
+</head>
+<body>
+    
+    <main class="d-flex flex-grow-1">
+
+    <div class="sidebar-container">
+        <aside>
+        <nav>
+
+<!-- Sidebar section -->            
+
+            <div class="sidebar-trigger"></div>
+
+            <a href="#" class="d-flex align-items-center">
+                <img width="50em" class="m-2" src="assets/images/logo.png" alt="logo">
+                <h1 class="vx-fs-6 vx-fw-700">Vuexy</h1>
+            </a>
+
+            <ul class="list-unstyled p-2 ms-1">
+                <li>
+                    <a href="#" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-smart-home vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Dashboards</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li class="color-neutral-200 vx-fw-500 my-3 ms-3">
+                    <h3 class="vx-fs-4 vx-fw-400">APPS & PAGES</h3>
+                </li>
+                <li class="my-3">
+                    <a href="accounts.html" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-file vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Account Settings</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="advance-search.html" class="d-flex align-items-center w-100 secondary-btn p-1 active">
+                        <i class="ti ti-layout-grid vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Advanced</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    </div>
+
+<!-- Sidebar section closes--> 
+ 
+    <article>
+
+<!-- Navigation -->
+
+    <nav class="d-flex align-items-center input-box navbar navbar-expand-md g-0">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="ti ti-menu-2 mb-1"></span>
+        </button>
+
+        <button type="submit" class="border-0 bg-transparent mt-1 d-block d-md-none" data-bs-toggle="modal" data-bs-target="#search-area"><i class="ti ti-search vx-fs-6 ms-3 me-2"></i></button>
+        <button type="submit" class="border-0 bg-transparent mt-1 d-none d-md-block "><i class="ti ti-search vx-fs-6 ms-3 me-2"></i></button>
+        <div class="collapse navbar-collapse" id="nav">
+            <input class="input-box border-0 me-auto " type="text" placeholder="Search [CTRL + K]">
+        </div>
+        
+        <ul class="list-unstyled d-flex align-items-center mb-1 mt-1 navigation">
+            <li><a href="#"><i class="ti ti-language-hiragana vx-fs-6
+                
+                rounded-circle nav-icon"></i></a></li>
+            <li><a href="#"><i class="ti ti-sun vx-fs-6
+                
+                rounded-circle nav-icon"></i></a></li>
+            <li><a href="#"><i class="ti ti-layout-grid-remove vx-fs-6
+                
+                rounded-circle nav-icon"></i></a></li>
+            <li><a href="#"><i class="ti ti-bell vx-fs-6
+                
+                rounded-circle nav-icon"></i></a></li>
+            <li><a href="#" class="ms-2"><img class="rounded-circle" width="42em" src="assets/images/profile.jpg" alt="profile-img"></a></li></li>
+        </ul>     
+       
+    </nav>
+
+    <div class="modal fade" id="search-area">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <i class="ti ti-search vx-fs-6 ms-3 me-2"></i>
+                       <input type="search" class="border-0 input-box" placeholder="Search [CTRL + K]">
+                       <button class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled p-2 ms-1">
+                <li>
+                    <a href="#" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-smart-home vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Dashboards</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li class="color-neutral-200 vx-fw-500 my-3 ms-3">
+                    <h3 class="vx-fs-4 vx-fw-400">APPS & PAGES</h3>
+                </li>
+                <li class="my-3">
+                    <a href="accounts.html" class="d-flex align-items-center w-100 secondary-btn p-1">
+                        <i class="ti ti-file vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Account Settings</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>
+                <li>
+                    <a href="advance-search.html" class="d-flex align-items-center w-100 secondary-btn p-1 active">
+                        <i class="ti ti-layout-grid vx-fs-6 mx-2"></i>
+                        <h3 class="vx-fs-4 vx-fw-400 mt-2 w-100">Advanced</h3>
+                        <button class="bg-transparent border-0 me-2"><i class="ti ti-caret-right-filled"></i></button>
+                    </a>
+                </li>   
+            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Navigation closes-->        
+    
+<!-- Advance search area -->
+
+    <section class="mt-4">
+        <h3 class="vx-fs-5 mt-2 px-4 py-2">Advanced Search</h3>
+
+        <form class="container-fluid">  
+
+                <div class="row d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="name">Name:</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" id="name" placeholder="Alaric Beslier" name="name">
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="email">Email:</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="email" placeholder="demo@example.com" id="email" name="email">
+                    </div>
+
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-3 px-4">
+                        <label class="mb-1 vx-fw-400" for="Post">Tax ID:</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="Web Designer" id="post" name="post">
+                    </div>
+                </div>
+
+                <div class="row d-flex flex-column flex-lg-row">
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-1 px-4">
+                        <label class="mb-1 vx-fw-400" for="city">City:</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" id="city" placeholder="Balky" name="city">
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-1 px-4">
+                        <label class="mb-1 vx-fw-400" for="date">Date:</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="date" placeholder="Startdate to Enddate" id="date" name="date">
+                    </div>
+
+                    <div class="col-12 col-lg-4 vx-fs-4 py-2 mt-1 px-4">
+                        <label class="mb-1 vx-fw-400" for="income">Salary</label>
+                        <input class="input-box w-100 vx-fw-400 vx-fs-4" type="text" placeholder="1000" id="income" name="income">
+                    </div>
+                </div>
+            </form>
+
+<!-- Advance search area closes-->
+
+<!-- list in table -->
+
+        <div class="table-responsive-lg">
+            <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>POST</th>
+                    <th>CITY</th>
+                    <th>DATE</th>
+                    <th>SALARY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Korrie O'Crevy</td>
+                    <td>kocrevy0@thetimes.co.uk</td>
+                    <td>Nuclear Power Engineer</td>
+                    <td>Krasnosilka</td>
+                    <td>09/23/2021</td>
+                    <td>$23896.35</td>
+                </tr>
+                <tr>
+                    <td>Bailie Coulman</td>
+                    <td>bcoulman1@yolasite.com</td>
+                    <td>VP Quality Control</td>
+                    <td>Hinigaran</td>
+                    <td>05/20/2021</td>
+                    <td>$13633.69</td>
+                </tr>
+                <tr>
+                    <td>Stella Ganderton</td>
+                    <td>sganderton2@tuttocitta.it</td>
+                    <td>Operator</td>
+                    <td>Golcowa</td>
+                    <td>03/24/2021</td>
+                    <td>$13076.28</td>
+                </tr>
+                <tr>
+                    <td>Dorolice Crossman</td>
+                    <td>dcrossman3@google.co.jp</td>
+                    <td>Cost Accountant</td>
+                    <td>Paquera</td>
+                    <td>12/03/2021</td>
+                    <td>$12336.17</td>
+                </tr>
+                <tr>
+                    <td>Harmonia Nisius</td>
+                    <td>hnisius4@gnu.org</td>
+                    <td>Senior Cost Accountant</td>
+                    <td>Lucan</td>
+                    <td>08/25/2021</td>
+                    <td>$10909.52</td>
+                </tr>
+                <tr>
+                    <td>Genevra Honeywood</td>
+                    <td>ghoneywood5@narod.ru</td>
+                    <td>Geologist</td>
+                    <td>Maofan</td>
+                    <td>06/01/2021</td>
+                    <td>$17803.80</td>
+                </tr>
+                <tr>
+                    <td>Eileen Diehn</td>
+                    <td>ediehn6@163.com</td>
+                    <td>Environmental Specialist</td>
+                    <td>Lampuyang</td>
+                    <td>10/15/2021</td>
+                    <td>$18991.67</td>
+                </tr>
+                <tr>
+                    <td>Richardo Aldren</td>
+                    <td>raldren7@mtv.com</td>
+                    <td>Senior Sales Associate</td>
+                    <td>Skoghall</td>
+                    <td>11/05/2021</td>
+                    <td>$19230.13</td>
+                </tr>
+                <tr>
+                    <td>Allyson Moakler</td>
+                    <td>amoakler8@shareasale.com</td>
+                    <td>Safety Technician</td>
+                    <td>Mogilany</td>
+                    <td>12/29/2021</td>
+                    <td>$11677.32</td>
+                </tr>
+                <tr>
+                    <td>Merline Penhalewick</td>
+                    <td>mpenhalewick9@php.net</td>
+                    <td>Junior Executive</td>
+                    <td>Kanuma</td>
+                    <td>04/19/2021</td>
+                    <td>$15939.52</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+<!-- list in table ends -->        
+
+<!-- Page shifting buttons -->
+
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center pb-3">
+            <span class="d-inline-block d-flex align-content-center m-2 ms-4 color-neutral-200">Showing 1 to 10 of 100 entries</span>
+
+            <div>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0 page-shift-back"><<</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0 page-shift-back"><</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0 active">1</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">2</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">3</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">4</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">5</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">...</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">10</button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0">></i></button>
+                <button class="accent-btn p-0 px-2 px-lg-3 py-1 py-lg-2 page-shift border-0 me-4">>></button>
+            </div>
+        </div>
+        
+ <!-- Page shifting buttons closes-->  
+
+    </section>
+    
+<!-- Footer -->
+
+    <footer class="d-flex justify-content-between mt-5">
+        <div class="d-flex vx-fs-4 vx-fw-400 color-neutral-400 mx-auto mx-lg-0">
+            © 2025 , made with ❤️ by 
+        <a href="#" class="color-primary ms-1">Pixinvent</a>
+        </div>
+
+        <div class="d-flex vx-fs-4 vx-fw-400 d-none d-lg-block">
+            <a href="#" class="ms-4 color-primary">License</a>
+            <a href="#" class="ms-4 color-primary"> More Themes</a>
+            <a href="#" class="ms-4 color-primary"> Documentation</a>
+            <a href="#" class="ms-4 color-primary">Support</a>
+        </div>
+    </footer>
+
+<!-- Footer ends-->    
+    
+    </article>
+
+    </main>
+
+</body>
+</html>
